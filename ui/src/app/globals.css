@@ -3,26 +3,34 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 10, 25, 47;
+  --background-end-rgb: 20, 40, 65;
 }
+
+
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: white;
+  background: url('/images/download.gif') no-repeat center bottom;
+  background-size: cover;
+  min-height: 100vh;
 }
+
+
 
 @layer components {
   .btn-primary {
-    @apply px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors;
+    @apply px-4 py-2 bg-indigo-500 text-white rounded-md hover:bg-indigo-600 transition-colors;
   }
-  
+
   .btn-secondary {
-    @apply px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition-colors;
+    @apply px-4 py-2 bg-gray-700 text-white rounded-md hover:bg-gray-600 transition-colors;
   }
-  
+
   .input-field {
-    @apply w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+    @apply w-full p-2 bg-gray-800 text-white border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400;
   }
+
 }
+

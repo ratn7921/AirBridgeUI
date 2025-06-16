@@ -26,7 +26,7 @@ export default function InviteCode({ port }: InviteCodeProps) {
       </p>
       
       <div className="flex items-center">
-        <div className="flex-1 bg-white p-3 rounded-l-md border border-r-0 border-gray-300 font-mono text-lg">
+        <div className="flex-1 bg-black p-3 rounded-l-md border border-r-0 border-gray-300 font-mono text-lg">
           {port}
         </div>
         <button
