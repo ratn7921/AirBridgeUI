@@ -34,7 +34,8 @@ public class FileController {
             uploadDirFile.mkdirs();
         }
         
-        server.createContext("/upload", new UploadHandler());
+// ... inside FileController constructor:
+        server.createContext("/api/upload", new UploadHandler());
         server.createContext("/download", new DownloadHandler());
         server.createContext("/", new CORSHandler());
         
