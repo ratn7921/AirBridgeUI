@@ -35,3 +35,19 @@ yarn-error.log*
 # OS specific
 .DS_Store
 Thumbs.db
+
+# Java
+target/
+*.jar
+*.class
+
+# Node.js (if frontend included)
+node_modules/
+out/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
